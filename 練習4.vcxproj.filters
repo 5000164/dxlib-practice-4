@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{5a6d8d85-c420-4624-a7e9-69b084e90e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{6a138a70-6b2e-48b0-a296-c1e0656c905d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{5cce7031-44f1-4099-8d82-ca85251e634c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{6ad54c20-c611-4134-814a-6bafcd1bfbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\DxLib">
+      <UniqueIdentifier>{47b4c61d-8d04-481e-889f-e2ab0904438d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\battle.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\character.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\font.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\json.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\keyboard.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\rendering.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\system.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\window.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\picojson.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxCompileConfig.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxDataType.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxDataTypeWin.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxDirectX.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxLib.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxPixelShader.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\DxLib\DxVertexShader.h">
+      <Filter>Library\DxLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Library\DxLib.txt">
+      <Filter>Library</Filter>
+    </Text>
+    <Text Include="Library\DxLib\DxLib.txt">
+      <Filter>Library\DxLib</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Library\DxLib\DxDrawFunc.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxDrawFunc_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxDrawFunc_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxDrawFunc_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLib.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLib_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLib_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLib_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLibW.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLibW_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLibW_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxLibW_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLib.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLib_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLib_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLib_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLibW.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLibW_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLibW_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\DxUseCLibW_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletcollision_vc6.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletcollision_vc6_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletcollision_vc8_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletcollision_vc8_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletdynamics_vc6.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletdynamics_vc6_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletdynamics_vc8_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletdynamics_vc8_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletmath_vc6.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletmath_vc6_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletmath_vc8_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libbulletmath_vc8_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libjpeg.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libjpeg_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libjpeg_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libjpeg_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libpng.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libpng_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libpng_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libpng_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libtheora_static.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libtheora_static_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libtheora_static_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\libtheora_static_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\ogg_static.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\ogg_static_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\ogg_static_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\ogg_static_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbis_static.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbis_static_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbis_static_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbis_static_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbisfile_static.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbisfile_static_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbisfile_static_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\vorbisfile_static_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\zlib.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\zlib_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\zlib_x64.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+    <Library Include="Library\DxLib\zlib_x64_d.lib">
+      <Filter>Library\DxLib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\battle.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\character.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\font.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\json.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\keyboard.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rendering.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\system.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\window.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\message.json">
+      <Filter>Data</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\battle.h" />
+    <ClInclude Include="Header\character.h" />
+    <ClInclude Include="Header\font.h" />
+    <ClInclude Include="Header\json.h" />
+    <ClInclude Include="Header\keyboard.h" />
+    <ClInclude Include="Header\rendering.h" />
+    <ClInclude Include="Header\system.h" />
+    <ClInclude Include="Header\window.h" />
+    <ClInclude Include="Library\DxLib\DxCompileConfig.h" />
+    <ClInclude Include="Library\DxLib\DxDataType.h" />
+    <ClInclude Include="Library\DxLib\DxDataTypeWin.h" />
+    <ClInclude Include="Library\DxLib\DxDirectX.h" />
+    <ClInclude Include="Library\DxLib\DxLib.h" />
+    <ClInclude Include="Library\DxLib\DxPixelShader.h" />
+    <ClInclude Include="Library\DxLib\DxVertexShader.h" />
+    <ClInclude Include="Library\picojson.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Library\DxLib.txt" />
+    <Text Include="Library\DxLib\DxLib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Library\DxLib\DxDrawFunc.lib" />
+    <Library Include="Library\DxLib\DxDrawFunc_d.lib" />
+    <Library Include="Library\DxLib\DxDrawFunc_x64.lib" />
+    <Library Include="Library\DxLib\DxDrawFunc_x64_d.lib" />
+    <Library Include="Library\DxLib\DxLib.lib" />
+    <Library Include="Library\DxLib\DxLibW.lib" />
+    <Library Include="Library\DxLib\DxLibW_d.lib" />
+    <Library Include="Library\DxLib\DxLibW_x64.lib" />
+    <Library Include="Library\DxLib\DxLibW_x64_d.lib" />
+    <Library Include="Library\DxLib\DxLib_d.lib" />
+    <Library Include="Library\DxLib\DxLib_x64.lib" />
+    <Library Include="Library\DxLib\DxLib_x64_d.lib" />
+    <Library Include="Library\DxLib\DxUseCLib.lib" />
+    <Library Include="Library\DxLib\DxUseCLibW.lib" />
+    <Library Include="Library\DxLib\DxUseCLibW_d.lib" />
+    <Library Include="Library\DxLib\DxUseCLibW_x64.lib" />
+    <Library Include="Library\DxLib\DxUseCLibW_x64_d.lib" />
+    <Library Include="Library\DxLib\DxUseCLib_d.lib" />
+    <Library Include="Library\DxLib\DxUseCLib_x64.lib" />
+    <Library Include="Library\DxLib\DxUseCLib_x64_d.lib" />
+    <Library Include="Library\DxLib\libbulletcollision_vc6.lib" />
+    <Library Include="Library\DxLib\libbulletcollision_vc6_d.lib" />
+    <Library Include="Library\DxLib\libbulletcollision_vc8_x64.lib" />
+    <Library Include="Library\DxLib\libbulletcollision_vc8_x64_d.lib" />
+    <Library Include="Library\DxLib\libbulletdynamics_vc6.lib" />
+    <Library Include="Library\DxLib\libbulletdynamics_vc6_d.lib" />
+    <Library Include="Library\DxLib\libbulletdynamics_vc8_x64.lib" />
+    <Library Include="Library\DxLib\libbulletdynamics_vc8_x64_d.lib" />
+    <Library Include="Library\DxLib\libbulletmath_vc6.lib" />
+    <Library Include="Library\DxLib\libbulletmath_vc6_d.lib" />
+    <Library Include="Library\DxLib\libbulletmath_vc8_x64.lib" />
+    <Library Include="Library\DxLib\libbulletmath_vc8_x64_d.lib" />
+    <Library Include="Library\DxLib\libjpeg.lib" />
+    <Library Include="Library\DxLib\libjpeg_d.lib" />
+    <Library Include="Library\DxLib\libjpeg_x64.lib" />
+    <Library Include="Library\DxLib\libjpeg_x64_d.lib" />
+    <Library Include="Library\DxLib\libpng.lib" />
+    <Library Include="Library\DxLib\libpng_d.lib" />
+    <Library Include="Library\DxLib\libpng_x64.lib" />
+    <Library Include="Library\DxLib\libpng_x64_d.lib" />
+    <Library Include="Library\DxLib\libtheora_static.lib" />
+    <Library Include="Library\DxLib\libtheora_static_d.lib" />
+    <Library Include="Library\DxLib\libtheora_static_x64.lib" />
+    <Library Include="Library\DxLib\libtheora_static_x64_d.lib" />
+    <Library Include="Library\DxLib\ogg_static.lib" />
+    <Library Include="Library\DxLib\ogg_static_d.lib" />
+    <Library Include="Library\DxLib\ogg_static_x64.lib" />
+    <Library Include="Library\DxLib\ogg_static_x64_d.lib" />
+    <Library Include="Library\DxLib\vorbisfile_static.lib" />
+    <Library Include="Library\DxLib\vorbisfile_static_d.lib" />
+    <Library Include="Library\DxLib\vorbisfile_static_x64.lib" />
+    <Library Include="Library\DxLib\vorbisfile_static_x64_d.lib" />
+    <Library Include="Library\DxLib\vorbis_static.lib" />
+    <Library Include="Library\DxLib\vorbis_static_d.lib" />
+    <Library Include="Library\DxLib\vorbis_static_x64.lib" />
+    <Library Include="Library\DxLib\vorbis_static_x64_d.lib" />
+    <Library Include="Library\DxLib\zlib.lib" />
+    <Library Include="Library\DxLib\zlib_d.lib" />
+    <Library Include="Library\DxLib\zlib_x64.lib" />
+    <Library Include="Library\DxLib\zlib_x64_d.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\battle.cc" />
+    <ClCompile Include="Source\character.cc" />
+    <ClCompile Include="Source\font.cc" />
+    <ClCompile Include="Source\json.cc" />
+    <ClCompile Include="Source\keyboard.cc" />
+    <ClCompile Include="Source\main.cc" />
+    <ClCompile Include="Source\rendering.cc" />
+    <ClCompile Include="Source\system.cc" />
+    <ClCompile Include="Source\window.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\message.json" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E79BCF8F-C6F3-4DE2-9621-8ECE7B53DE46}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>練習4</RootNamespace>
+    <ProjectName>練習4</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
