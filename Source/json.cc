@@ -18,20 +18,4 @@ void Json::Init() {
   picojson::parse(v, json_str.begin(), json_str.end(), &err);
 }
 
-std::string Json::GetString(std::string key) {
-  picojson::object &o = v.get<picojson::object>();
-  return o[key].get<std::string>();
-}
-
-void Json::GetStringArray(std::string key, std::string *message) {
-  picojson::object &o = v.get<picojson::object>();
-  picojson::array &a = o[key].get<picojson::array>();
-  int counter = 0;
-  for (picojson::array::iterator i = a.begin(); i != a.end(); i++) {
-    message[counter] = i->get<std::string>();
-    counter++;
-  }
-  return;
-}
-
 }

@@ -10,11 +10,11 @@ class Json {
 public:
   Json(std::string);
   void Init();
-  void GetStringArray(std::string, std::string *);
+
+  picojson::value v;
 
 private:
   std::string input_file;
-  picojson::value v;
   std::string err;
 };
 

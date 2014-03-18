@@ -15,8 +15,6 @@ private:
   int r;
   int g;
   int b;
-  int font_size;
-  std::string font_family;
 };
 
 }

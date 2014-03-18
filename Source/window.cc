@@ -8,9 +8,6 @@ Window::Window() {
   r = 30;
   g = 30;
   b = 30;
-
-  font_size = 18;
-  font_family = "ＭＳ Ｐゴシック";
 }
 
 Window::~Window() {
@@ -34,11 +31,6 @@ void Window::Init() {
   }
 
   SetBackgroundColor(r, g, b);
-
-  // フォント変更は処理が重いのでウィンドウ毎に変更
-  ChangeFont(font_family.c_str());
-  SetFontSize(font_size);
-  ChangeFontType(DX_FONTTYPE_ANTIALIASING_8X8);
 }
 
 }

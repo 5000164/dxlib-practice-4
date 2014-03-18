@@ -11,13 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\battle.h" />
-    <ClInclude Include="Header\character.h" />
-    <ClInclude Include="Header\font.h" />
     <ClInclude Include="Header\json.h" />
     <ClInclude Include="Header\keyboard.h" />
-    <ClInclude Include="Header\rendering.h" />
+    <ClInclude Include="Header\point.h" />
     <ClInclude Include="Header\system.h" />
+    <ClInclude Include="Header\message.h" />
     <ClInclude Include="Header\window.h" />
     <ClInclude Include="Library\DxLib\DxCompileConfig.h" />
     <ClInclude Include="Library\DxLib\DxDataType.h" />
@@ -95,14 +93,12 @@
     <Library Include="Library\DxLib\zlib_x64_d.lib" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\battle.cc" />
-    <ClCompile Include="Source\character.cc" />
-    <ClCompile Include="Source\font.cc" />
     <ClCompile Include="Source\json.cc" />
     <ClCompile Include="Source\keyboard.cc" />
     <ClCompile Include="Source\main.cc" />
-    <ClCompile Include="Source\rendering.cc" />
+    <ClCompile Include="Source\point.cc" />
     <ClCompile Include="Source\system.cc" />
+    <ClCompile Include="Source\message.cc" />
     <ClCompile Include="Source\window.cc" />
   </ItemGroup>
   <ItemGroup>

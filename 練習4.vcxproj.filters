@@ -18,22 +18,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header\battle.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\character.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\font.h">
-      <Filter>Header</Filter>
-    </ClInclude>
     <ClInclude Include="Header\json.h">
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Header\keyboard.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Header\rendering.h">
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Header\system.h">
@@ -65,6 +53,12 @@
     </ClInclude>
     <ClInclude Include="Library\DxLib\DxVertexShader.h">
       <Filter>Library\DxLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\point.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\message.h">
+      <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -258,15 +252,6 @@
     </Library>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\battle.cc">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\character.cc">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\font.cc">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\json.cc">
       <Filter>Source</Filter>
     </ClCompile>
@@ -276,13 +261,16 @@
     <ClCompile Include="Source\main.cc">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\rendering.cc">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\system.cc">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\window.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\point.cc">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\message.cc">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
