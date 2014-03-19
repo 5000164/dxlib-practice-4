@@ -8,7 +8,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
   window->Init();
 
   // メッセージ表示
-  message::Message *message = new message::Message("demo");
+  message::Message *message = new message::Message("demo", 20, 600, 1004, 748);
   message->Init();
   message->Run();
   delete message;
