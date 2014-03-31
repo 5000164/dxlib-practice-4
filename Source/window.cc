@@ -31,6 +31,7 @@ void Window::Init() {
   }
 
   SetBackgroundColor(r, g, b);
+  LoadGraphScreen(0, 0, "./Data/background.jpg", FALSE);
 }
 
 }

@@ -15,6 +15,8 @@ public:
   void Run();
 
 private:
+  void MakeDrawScreen();
+  void DrawScreen();
   void DrawBackground();
   void NextPage();
 
@@ -42,6 +44,7 @@ private:
   point::Point *start;
   point::Point *end;
   point::Point *caret;
+  int draw_screen;
 };
 
 }

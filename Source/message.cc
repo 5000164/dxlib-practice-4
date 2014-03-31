@@ -58,32 +58,30 @@ void Message::Init() {
 }
 
 void Message::Run() {
-  SetDrawScreen(DX_SCREEN_BACK);
-  ClearDrawScreen();
-  DrawBackground();
-
+  MakeDrawScreen();
   dx_system::System *system = new dx_system::System();
 
   for (int i = 0; i < number_of_data; i++) {
     for (int j = 0; j < (int)message[i].size(); j += 2) {
       system->Watch();
 
+      // ˆê•¶Žš‚¾‚¯”²‚«o‚µ
       char c[3];
       c[0] = message[i][j];
       c[1] = message[i][j + 1];
       c[2] = '\0';
 
-      int x = start->x + margin_x + (caret->x * font_width);
-      int y = start->y + margin_y + (caret->y * line_height) + ((line_height - font_size) / 2);
+      int x = margin_x + (caret->x * font_width);
+      int y = margin_y + (caret->y * line_height) + ((line_height - font_size) / 2);
 
-      if (x + font_width + margin_x > end->x) {
+      if ((x + font_width + margin_x) > (end->x - start->x)) {
         caret->x = 0;
         caret->y++;
-        x = start->x + margin_x + (caret->x * font_width);
-        y = start->y + margin_y + (caret->y * line_height) + ((line_height - font_size) / 2);
+        x = margin_x + (caret->x * font_width);
+        y = margin_y + (caret->y * line_height) + ((line_height - font_size) / 2);
       }
 
-      if (y + font_size + ((line_height - font_size) / 2) + margin_y > end->y) {
+      if ((y + font_size + ((line_height - font_size) / 2) + margin_y) > (end->y - start->y)) {
         NextPage();
       } else {
         DrawString(x, y, c, font_color_dx);
@@ -98,14 +96,30 @@ void Message::Run() {
   return;
 }
 
+void Message::MakeDrawScreen() {
+  draw_screen = MakeScreen(end->x - start->x, end->y - start->y, FALSE);
+  SetDrawScreen(draw_screen);
+  ClearDrawScreen();
+  DrawBackground();
+
+  return;
+}
+
 void Message::DrawBackground() {
   int color;
   color = GetColor(50, 50, 50);
-  DrawBox(start->x, start->y, end->x, end->y, color, TRUE);
+  DrawBox(0, 0, end->x - start->x, end->y - start->y, color, TRUE);
   color = GetColor(250, 250, 250);
-  DrawBox(start->x, start->y, end->x, end->y, color, FALSE);
+  DrawBox(0, 0, end->x - start->x, end->y - start->y, color, FALSE);
   color = GetColor(230, 230, 230);
-  DrawTriangle(end->x - 30, end->y - 20, end->x - 10, end->y - 20, end->x - 20, end->y - 10, color, TRUE);
+  DrawTriangle(end->x - start->x - 30, end->y - start->y - 20, end->x - start->x - 10, end->y - start->y - 20, end->x - start->x - 20, end->y - start->y - 10, color, TRUE);
+
+  return;
+}
+
+void Message::DrawScreen() {
+  SetDrawScreen(DX_SCREEN_FRONT);
+  DrawExtendGraph(start->x, start->y, end->x, end->y, draw_screen, FALSE);
 
   return;
 }
@@ -114,14 +128,11 @@ void Message::NextPage() {
   caret->x = 0;
   caret->y = 0;
   number_of_page++;
-
   keyboard::Keyboard *keyboard = new keyboard::Keyboard();
 
-  ScreenFlip();
+  DrawScreen();
   keyboard->WaitInputOnce();
-  SetDrawScreen(DX_SCREEN_BACK);
-  ClearDrawScreen();
-  DrawBackground();
+  MakeDrawScreen();
 
   delete keyboard;
 
